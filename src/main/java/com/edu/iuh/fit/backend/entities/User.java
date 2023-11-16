@@ -44,4 +44,16 @@ public class User {
     private Set<Post> post;
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private Set<PostComment> comments;
+
+    public User(String firstName, String middleName, String lastName, String mobile, String email, String passwordHash, String intro, String profile) {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.mobile = mobile;
+        this.email = email;
+        this.passwordHash = passwordHash;
+        this.registeredAt = LocalDateTime.now();
+        this.intro = intro;
+        this.profile = profile;
+    }
 }

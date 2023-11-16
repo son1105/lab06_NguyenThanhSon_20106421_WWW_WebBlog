@@ -47,4 +47,17 @@ public class Post {
     private Set<Post> posts;
     @OneToMany(mappedBy = "post")
     private Set<PostComment> postComments;
+
+    public Post(String content, String metaTitle, LocalDateTime publishAt, String summary, String title, LocalDateTime updatedAt, User user, Post post) {
+        this.content = content;
+        this.createdAt = LocalDateTime.now();
+        this.metaTitle = metaTitle;
+        this.published = true;
+        this.publishAt = publishAt;
+        this.summary = summary;
+        this.title = title;
+        this.updatedAt = updatedAt;
+        this.user = user;
+        this.post = post;
+    }
 }

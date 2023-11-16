@@ -41,4 +41,18 @@ public class PostComment {
     private PostComment postComment;
     @OneToMany(mappedBy = "postComment", cascade = CascadeType.ALL)
     private Set<PostComment> postComments;
+
+    public PostComment(String title, String content, LocalDateTime publishedAt, Post post, User user, PostComment postComment) {
+        this.title = title;
+        this.published = true;
+        this.content = content;
+        this.publishedAt = publishedAt;
+        this.createdAt = LocalDateTime.now();
+        this.post = post;
+        this.user = user;
+        this.postComment = postComment;
+    }
+
+
+
 }

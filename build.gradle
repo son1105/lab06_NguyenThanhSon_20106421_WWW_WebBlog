@@ -30,6 +30,8 @@ dependencies {
     implementation 'com.neovisionaries:nv-i18n:1.29'
     implementation 'org.springframework.data:spring-data-rest-core:4.1.4'
     implementation 'org.springframework.session:spring-session-core'
+    implementation 'net.datafaker:datafaker:2.0.2'
+    implementation 'org.thshsh:lorem-ipsum-generator:2.0.0'
 
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
