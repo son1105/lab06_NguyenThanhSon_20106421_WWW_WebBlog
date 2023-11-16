@@ -2,7 +2,7 @@
 web blog lab week06
 
 Xây dựng web blog với các tính năng:
-- Đăng nhập: user thực hiện đăng nhập vào web bằng email và password của mình.
+- Đăng nhập: user thực hiện đăng nhập vào web bằng email và password của mình. Account admin: son@gmail.com password: 123
 - Đăng ký: nếu không có tài khoản, user có thể thực hiện đăng ký tài khoản bằng cách nhấn vào nút "Register"
 - Khi đăng nhập thành công trang user sẽ hiện ra với phần trên để user thực hiện post 1 bài post mới, phần dưới hiển thị danh sách các post của các user được phân trang và sắp xếp theo update at của post
 - Xem thông tin của user: góc trên bên phải sẽ hiển thị tên user cho phép click để chuyển đến trang chứa thông tin của user đang đăng nhập
