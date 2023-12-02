@@ -76,7 +76,7 @@
     <div class="mb-2" style="width: 99%;" th:each="post : ${postPage.content}">
         <div class="bg-light p-3 border border-danger">
             <div class="d-flex">
-                <h5 th:text="${post.user.firstName}+' '+${post.user.middleName}+' '+${post.user.lastName}"></h5>
+                <a th:href="@{/user/infoUser/{userId}(userId = ${post.user.id})}"><h5 th:text="${post.user.firstName}+' '+${post.user.middleName}+' '+${post.user.lastName}"></h5></a>
                 <p class="h5 mx-3 text-decoration-underline" style="color: grey;" th:text="${post.updatedAt}"></p>
             </div>
             <div class="border border-success">
@@ -110,64 +110,6 @@
                             </div>
                             <p class="h5 text-info" th:text="${comment.title}"></p>
                             <p class="h5" th:text="${comment.content}"></p>
-<!--                            <div>-->
-<!--                                <button class="btn btn-link" onclick="showComment(this)">Show comments</button>-->
-<!--                                <div style="display: none;">-->
-<!--                                    <div class="mb-3 border border-3 p-3"-->
-<!--                                         style="border-color: grey; margin-left: 30px;">-->
-<!--                                        <div class="d-flex">-->
-<!--                                            <h5>Nguyen Thanh Son</h5>-->
-<!--                                            <p class="h5 mx-3 text-decoration-underline" style="color: grey;">-->
-<!--                                                2023-11-09-->
-<!--                                            </p>-->
-<!--                                        </div>-->
-<!--                                        <p class="h5 text-info">Title comment</p>-->
-<!--                                        <p class="h5">comment of Nguyen Thanh Son</p>-->
-<!--                                        <div>-->
-<!--                                            <button class="btn btn-link" onclick="showComment(this)">Show-->
-<!--                                                comments-->
-<!--                                            </button>-->
-<!--                                            <div style="display: none;"></div>-->
-<!--                                        </div>-->
-<!--                                        <div class="mt-2 d-flex">-->
-<!--                                            <input type="text" class="form-control" style="font-size: 20px;"-->
-<!--                                                   placeholder="Enter your comment">-->
-<!--                                            <button class="btn btn-primary mx-2"-->
-<!--                                                    style="font-size: 20px;">Enter-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="mb-3 border border-3 p-3"-->
-<!--                                         style="border-color: grey; margin-left: 30px">-->
-<!--                                        <div class="d-flex">-->
-<!--                                            <h5>Pham Thanh Son</h5>-->
-<!--                                            <p class="h5 mx-3 text-decoration-underline" style="color: grey;">-->
-<!--                                                2023-11-09-->
-<!--                                            </p>-->
-<!--                                        </div>-->
-<!--                                        <p class="h5 text-info">Title comment</p>-->
-<!--                                        <p class="h5">comment of Pham Thanh Son</p>-->
-<!--                                        <div>-->
-<!--                                            <button class="btn btn-link" onclick="showComment(this)">Show-->
-<!--                                                comments-->
-<!--                                            </button>-->
-<!--                                            <div style="display: none;"></div>-->
-<!--                                        </div>-->
-<!--                                        <div class="mt-2 d-flex">-->
-<!--                                            <input type="text" class="form-control" style="font-size: 20px;"-->
-<!--                                                   placeholder="Enter your comment">-->
-<!--                                            <button class="btn btn-primary mx-2"-->
-<!--                                                    style="font-size: 20px;">Enter-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="mt-2 d-flex">-->
-<!--                                <input type="text" class="form-control" style="font-size: 20px;"-->
-<!--                                       placeholder="Enter your comment">-->
-<!--                                <button class="btn btn-primary mx-2" style="font-size: 20px;">Enter</button>-->
-<!--                            </div>-->
                         </div>
                         <form action="#" th:action="@{/addComment(postId=${post.id})}" th:object="${comment}" class="my-2 d-flex" method="post">
                             <div style="width: 90%">

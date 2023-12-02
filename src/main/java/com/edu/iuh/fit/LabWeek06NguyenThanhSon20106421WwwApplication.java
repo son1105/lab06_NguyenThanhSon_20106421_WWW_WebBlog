@@ -35,14 +35,13 @@ public class LabWeek06NguyenThanhSon20106421WwwApplication {
         SpringApplication.run(LabWeek06NguyenThanhSon20106421WwwApplication.class, args);
     }
 
-    @Bean
+//    @Bean
     CommandLineRunner initData(){
         return args -> {
             User userAdmin = new User("Nguyễn", "Thanh", "Sơn", "0955687321", "son@gmail.com", "123", "Hello everyone", "My name is Son");
             userRepository.save(userAdmin);
             Faker faker = new Faker(new Locale("vi", "VN"));
             Random random = new Random();
-            Device devices = faker.device();
             String[] ho = {"Nguyễn", "Trần", "Lê", "Võ", "Phạm", "Phan"};
             String[] tenLot = {"Văn", "Thanh", "Tấn"};
             String[] ten = {"Sơn", "Phong", "Toàn", "Lợi", "Việt"};

@@ -1,6 +1,7 @@
 package com.edu.iuh.fit.frontend.controllers;
 
 import com.edu.iuh.fit.backend.entities.Post;
+import com.edu.iuh.fit.backend.entities.PostComment;
 import com.edu.iuh.fit.backend.entities.User;
 import com.edu.iuh.fit.backend.repositories.PostRepository;
 import com.edu.iuh.fit.backend.repositories.UserRepository;
@@ -22,6 +23,9 @@ import java.util.stream.IntStream;
 public class PostController {
     @Autowired
     private PostRepository postRepository;
+    @Autowired
+    private UserRepository userRepository;
+
     @PostMapping("/addPost")
     public String addPost(@ModelAttribute Post post, HttpSession session){
         post.setCreatedAt(LocalDateTime.now());
@@ -31,5 +35,15 @@ public class PostController {
         post.setPublished(true);
         postRepository.save(post);
         return "redirect:user/logIn";
+    }
+
+    @GetMapping("/post/user/{userId}")
+    public String getPostOfUser(@PathVariable("userId") long userId, Model model){
+        List<Post> posts = postRepository.findAllByUserOrderByUpdatedAtDesc(userRepository.findById(userId).get());
+        PostComment postComment = new PostComment();
+        model.addAttribute("comment", postComment);
+        model.addAttribute("user", userRepository.findById(userId).get());
+        model.addAttribute("posts", posts);
+        return "post/postOfUser";
     }
 }

@@ -41,6 +41,12 @@ public class UserController {
         return "user/infoUser";
     }
 
+    @GetMapping("/infoUser/{userId}")
+    public String showAnotherUser(Model model, @PathVariable("userId") long userId){
+        model.addAttribute("user", userRepository.findById(userId).get());
+        return "user/infoUser";
+    }
+
     @GetMapping("/logIn")
     public String logIn(@ModelAttribute("user") User user, HttpSession session, Model model, @RequestParam("page") Optional<Integer> page,
                         @RequestParam("size") Optional<Integer> size) {

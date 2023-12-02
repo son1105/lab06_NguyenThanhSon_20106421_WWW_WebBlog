@@ -34,6 +34,7 @@
             <li th:each="element : ${user.getProfile().split(';')}" th:text="${element}"></li>
         </ul>
     </div>
+    <a class="btn btn-primary" th:href="@{/post/user/{userId}(userId = ${user.getId()})}">View Your Post</a>
 </div>
 </body>
 </html>

@@ -20,12 +20,6 @@
         <div class="mb-3 bg-danger border border-2 justify-content-center border-warning w-25" th:if="${logFail}">
             <p class="text-light">Log fail!</p>
         </div>
-        <!--        <%-->
-        <!--        String notice = request.getAttribute("notice") + "";-->
-        <!--        if (!notice.equals("null")) {%>-->
-        <!--        <div class="alert alert-danger" role="alert"><%=notice%>-->
-        <!--        </div>-->
-        <!--        <%}%>-->
         <button type="submit" class="btn btn-primary">Log In</button>
         <a class="btn btn-primary" th:href="@{/user/show-register-form}">Register</a>
     </form>
