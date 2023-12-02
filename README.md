@@ -26,11 +26,18 @@ Xây dựng web blog với các tính năng:
   ![Screenshot (91)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/45c49811-d988-4a6c-9ef0-4504db385471)
 
 - Đăng xuất: user có thể đăng xuất ra màn hình đăng nhập bằng các click vào nút Log out
-  
+
+- Xem thông tin của một user nào đó: bên cạnh mỗi bài post sẽ có tên của người đăng, click vào đó để xem thông tin của họ:
+  ![Screenshot (92)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/9a7e57d3-c2bf-433d-8712-9c07eabb1dcb)
+  ![image](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/ac0692fa-8a26-4c68-8953-1b88a50abb3f)
+- Cũng có thể xem bài viết của họ bằng cách click View Your Post trong trang user và thao tác comment nếu muốn.
+  ![image](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/12af6a85-2679-4122-8d4c-4d5b6a08e1ef)
+  ![Screenshot (95)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/8d956595-5602-40a6-9016-bb0625f90054)
+  ![image](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/c33e28a8-cfe4-4345-bcfe-363d64eefd19)
+
 - Xem comment của một post: bên dưới mỗi post sẽ có nút "Comments" để xem các comment của các user dành cho post này.
   ![Screenshot (82)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/16311a34-43b0-4b1e-8ced-4dd00928a7d0)
   ![Screenshot (83)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/7da5d1d4-61ae-4e36-a4d3-770f99f117ff)
-
 - Comment một bài viết: user có thể thực hiện comment vào một post nào đó bằng cách nhấn xem comment và điền title + content comment và nhấn "Enter"
   ![image](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/f9d90312-ccfc-49ed-b0ee-acbb02bdd66e)
 - Một comment mới đã được thêm:
