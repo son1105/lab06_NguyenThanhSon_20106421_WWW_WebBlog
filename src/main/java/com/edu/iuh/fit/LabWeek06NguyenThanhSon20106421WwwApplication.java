@@ -35,7 +35,7 @@ public class LabWeek06NguyenThanhSon20106421WwwApplication {
         SpringApplication.run(LabWeek06NguyenThanhSon20106421WwwApplication.class, args);
     }
 
-//    @Bean
+    @Bean
     CommandLineRunner initData(){
         return args -> {
             User userAdmin = new User("Nguyễn", "Thanh", "Sơn", "0955687321", "son@gmail.com", "123", "Hello everyone", "My name is Son");
