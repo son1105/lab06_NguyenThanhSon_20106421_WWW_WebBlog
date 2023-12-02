@@ -1,5 +1,6 @@
 package com.edu.iuh.fit.frontend.controllers;
 
+import com.edu.iuh.fit.backend.dtos.Search;
 import com.edu.iuh.fit.backend.entities.Post;
 import com.edu.iuh.fit.backend.entities.PostComment;
 import com.edu.iuh.fit.backend.entities.User;
@@ -75,6 +76,8 @@ public class UserController {
             List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPage).boxed().toList();
             model.addAttribute("pageNumbers", pageNumbers);
         }
+        Search search = new Search();
+        model.addAttribute("search", search);
         return "user/user";
     }
 

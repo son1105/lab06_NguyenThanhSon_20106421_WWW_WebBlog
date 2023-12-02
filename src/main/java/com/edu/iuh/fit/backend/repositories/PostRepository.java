@@ -14,4 +14,12 @@ public interface PostRepository extends JpaRepository<Post, Long> {
     List<Post> findAllByPost(Post post);
 
     List<Post> findAllByUserOrderByUpdatedAtDesc(User user);
+
+    List<Post> findAllByMetaTitle(String metaTitle);
+
+    List<Post> findAllByUserLastName(String lastName);
+
+    List<Post> findAllByUserLastNameAndUserMiddleName(String lastName, String middleName);
+
+    List<Post> findAllByUserLastNameAndUserMiddleNameAndUserFirstName(String lastName, String middleName, String firstName);
 }
