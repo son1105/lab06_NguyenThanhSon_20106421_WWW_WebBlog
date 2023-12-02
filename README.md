@@ -12,7 +12,7 @@ Xây dựng web blog với các tính năng:
   ![Screenshot (79)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/1741846b-e55d-4189-b8ff-5971b802ffa6)
 
 - Khi đăng nhập thành công trang user sẽ hiện ra với phần trên để user thực hiện post 1 bài post mới, phần dưới hiển thị danh sách các post của các user được phân trang và sắp xếp theo update at của post
-  ![Screenshot (80)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/3d61d9d2-d4fb-444c-a36f-eb19d2612a60)
+  ![Screenshot (97)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/50c849a8-effa-4afe-8c6d-9108038fdb8e)
 
 - Xem thông tin của user: góc trên bên phải sẽ hiển thị tên user cho phép click để chuyển đến trang chứa thông tin của user đang đăng nhập
   ![Screenshot (88)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/426270f3-9aea-4489-aba2-e6ae56da49a8)
@@ -26,6 +26,17 @@ Xây dựng web blog với các tính năng:
   ![Screenshot (91)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/45c49811-d988-4a6c-9ef0-4504db385471)
 
 - Đăng xuất: user có thể đăng xuất ra màn hình đăng nhập bằng các click vào nút Log out
+
+- Search: Tìm kiếm các bài post với metaTitle hoặc theo tên của tác giả:
+    + Thực hiện nhập từ khoá tìm kiếm vào text search. Hệ thống sẽ tìm kiếm các Post có metaTitle là từ khoá bạn nhập vào.
+      ![Screenshot (98)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/a579e98e-b435-4ce5-b344-48e619875703)
+      ![Screenshot (99)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/5e84582d-a110-4b02-8e5d-301bfe01c28f)
+    + Nếu hệ thống không tìm thấy Post nào theo metaTitle, sẽ tự động chuyển sang tìm kiếm theo tên của tác giả:
+      ![Screenshot (101)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/09958c8e-a20b-4dd2-af1b-1ad888d47afd)
+      ![Screenshot (102)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/618b9cd7-6a35-46b0-822d-80d723fb5959)
+
+      ![Screenshot (103)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/a2becb50-9511-498f-92e9-9518f1aeeb70)
+      ![Screenshot (104)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/4ff3a8ea-4e92-4d1b-b7b1-d69b8ea7280a)
 
 - Xem thông tin của một user nào đó: bên cạnh mỗi bài post sẽ có tên của người đăng, click vào đó để xem thông tin của họ:
   ![Screenshot (92)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/9a7e57d3-c2bf-433d-8712-9c07eabb1dcb)
