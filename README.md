@@ -27,4 +27,8 @@ Xây dựng web blog với các tính năng:
   ![image](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/f9d90312-ccfc-49ed-b0ee-acbb02bdd66e)
 - Một comment mới đã được thêm:
   ![Screenshot (85)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/9985828b-bee9-469e-b619-dee12f029056)
+- Post một bài viết mới: user có thể điền thông tin vào khu vực post bài để thực hiện đăng một bài viết:
+  ![Screenshot (86)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/1de5335b-74fe-4138-a029-60f1ecb60d49)
+- Một bài viết mới đã được thêm:
+  ![Screenshot (87)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/46666910-d3c4-4535-b653-3886420b1c28)
 
