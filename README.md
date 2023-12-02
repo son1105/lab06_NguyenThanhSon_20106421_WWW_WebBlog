@@ -15,7 +15,15 @@ Xây dựng web blog với các tính năng:
   ![Screenshot (80)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/3d61d9d2-d4fb-444c-a36f-eb19d2612a60)
 
 - Xem thông tin của user: góc trên bên phải sẽ hiển thị tên user cho phép click để chuyển đến trang chứa thông tin của user đang đăng nhập
-  ![Screenshot (81)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/c36a19a9-914e-4ab9-9ea7-3d7eb0942248)
+  ![Screenshot (88)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/426270f3-9aea-4489-aba2-e6ae56da49a8)
+
+- Xem các bài post của user: trong trang user, click vào View Your Post để hiện thị các bài viết bản thân đã post:
+  ![Screenshot (89)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/d4339539-bef7-4c65-9183-b49623cf460a)
+
+- Thực hiện comment vào bài post bằng cách nhấn vào nút Comment, nhập comment và Enter:
+  ![Screenshot (90)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/10938de7-a5a2-47ca-93e5-e23d9baa0e74)
+- Một comment được thêm:
+  ![Screenshot (91)](https://github.com/son1105/lab06_NguyenThanhSon_20106421_WWW_WebBlog/assets/115455297/45c49811-d988-4a6c-9ef0-4504db385471)
 
 - Đăng xuất: user có thể đăng xuất ra màn hình đăng nhập bằng các click vào nút Log out
   
